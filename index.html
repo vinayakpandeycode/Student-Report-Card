@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Report Card Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Student Report Card Generator</h1>
+    <form id="reportCardForm">
+      <input type="text" id="studentName" placeholder="Student Name" required />
+      <input type="text" id="rollNumber" placeholder="Roll Number" required />
+      <div class="marks-input">
+        <input type="number" id="electronics" placeholder="Basic of Electronic Engineering Marks" required />
+        <input type="number" id="dataStructure" placeholder="Data Structure Marks" required />
+        <input type="number" id="compilerDesign" placeholder="Compiler Design Marks" required />
+        <input type="number" id="softwareEngineering" placeholder="Software Engineering Marks" required />
+      </div>
+      <button type="submit">🎯 Generate Report</button>
+    </form>
+
+    <div class="result" id="resultSection" style="display:none;">
+      <h2>📄 Report Card</h2>
+      <p><strong>👤 Name:</strong> <span id="rName"></span></p>
+      <p><strong>🆔 Roll No:</strong> <span id="rRoll"></span></p>
+      <p><strong>🧮 Total Marks:</strong> <span id="rTotal"></span></p>
+      <p><strong>📊 Percentage:</strong> <span id="rPercentage"></span>%</p>
+      <p><strong>🎖 Grade:</strong> <span id="rGrade"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
